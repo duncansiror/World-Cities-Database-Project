@@ -25,7 +25,7 @@ Return to the server terminal and access MySQL with the previously created user.
 
 <img width="596" height="82" alt="createdb" src="https://github.com/user-attachments/assets/cb441d9b-1907-4764-b162-d8828ef03277" /><br/>
 
-Enter the database and create the table: `use mydb; DROP TABLE IF EXISTS worldcities;   CREATE TABLE worldcities (      city VARCHAR(120),  city_ascii VARCHAR(120), lat FLOAT,  lng FLOAT,  country VARCHAR(120),  iso2 VARCHAR(2),  iso3 VARCHAR(3),  admin_name VARCHAR(120), capital VARCHAR(7), population FLOAT, id VARCHAR(10))   CHARACTER SET=utf8mb4;` The columns of the table must match the colummns of the CSV file. A character set of utf8mb4 in order not to lose characters. MySQL utf8 uses a maximum of three bytes and cannot store four-byte unicode characters. 
+Enter the database and create the table: `use mydb; DROP TABLE IF EXISTS worldcities;   CREATE TABLE worldcities (      city VARCHAR(120),  city_ascii VARCHAR(120), lat FLOAT,  lng FLOAT,  country VARCHAR(120),  iso2 VARCHAR(2),  iso3 VARCHAR(3),  admin_name VARCHAR(120), capital VARCHAR(7), population FLOAT, id VARCHAR(10))   CHARACTER SET=utf8mb4;` The columns of the table must match the colummns of the CSV file. A character set of utf8mb4 is used in order not to lose characters. MySQL utf8 uses a maximum of three bytes and cannot store four-byte unicode characters. 
 
 ## Format and move CSV
 
